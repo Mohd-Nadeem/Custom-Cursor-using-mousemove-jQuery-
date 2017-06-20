@@ -1,0 +1,22 @@
+.pointer {
+  position:absolute;
+  display:inline-block;
+  height:30px;
+  width:5px;
+  background-color:red;  
+  transform:rotate(-20deg);
+  cursor:none;
+}
+.pointer:after {
+    content: "";
+    position: absolute;
+    border-bottom: 22px solid red;
+    border-left: 22px solid transparent;
+    border-right: 22px solid transparent;
+    top: -21px;
+    left: -19px;
+    margin: 0 auto;
+}
+body{
+position:relative;
+}
